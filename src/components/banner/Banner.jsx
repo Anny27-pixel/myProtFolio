@@ -1,0 +1,10 @@
+
+const Banner = () => {
+  return (
+    <section id="home" className="w-full h-[800px] pt-10 pb-20 flex border-b-[1px] border-b-slate-800">
+        Banner
+    </section>
+  );
+}
+
+export default Banner;

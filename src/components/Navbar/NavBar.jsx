@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { logo } from "../../assets/images/index";
 import { navLinksdata } from "../../constants/index";
 
@@ -19,7 +20,14 @@ const NavBar = () => {
         <ul className="flex space-x-10">
           {navLinksdata.map((navlink) => (
             <li key={navlink._id} className="text-lightText font-semibold hover:text-colorfulText duration-500">
-              {navlink.title}
+              <Link 
+              activeClass="active"
+              to={navlink.link}
+              spy = {true}
+              smooth = {true}
+              offset={-70}
+              duration={500}
+              >{navlink.title}</Link>
             </li>
           ))}
         </ul>
