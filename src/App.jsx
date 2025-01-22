@@ -1,11 +1,13 @@
 
 import './App.css'
+import NavBar from './components/Navbar/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>my Protfolio </h1>
-      <p>i AM Anny </p>
+    <div className="w-full h-auto bg-bodyColor text-lightText">
+      <div className='max-w-screen-2xl mx-auto px-16'>
+      <NavBar />
+      </div>
     </div>
   );
 }
