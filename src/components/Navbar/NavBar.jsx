@@ -4,14 +4,14 @@ import { navLinksdata } from "../../constants/index";
 
 const NavBar = () => {
   return (
-    <div className="w-full h-14 mx-auto flex justify-between items-center font-titleFont">
+    <div className="w-full h-14 mx-auto flex justify-between items-center font-titleFont border-b-2 border-b-slate-800">
       {/* Logo and Title Section */}
       <div className="flex items-center">
         <div>
           <img src={logo} alt="logo" className="w-auto" />
         </div>
-        <div className="ml-4 text-xl font-bold">
-          <h1>Jabin Tasmin Anny</h1>
+        <div className="mt-5 text-xl font-bold">
+          <h1>ANNY</h1>
         </div>
       </div>
 
