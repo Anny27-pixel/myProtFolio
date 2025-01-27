@@ -1,31 +1,34 @@
-import { SiCodeproject, SiRoamresearch, SiWeightsandbiases } from "react-icons/si";
+import { CgWebsite } from "react-icons/cg";
+import { GiArchiveResearch } from "react-icons/gi";
+import { GoProjectSymlink } from "react-icons/go";
+import { GrProjects } from "react-icons/gr";
 import Title from "../layouts/Title";
 import CardBox from "./CardBox";
 
 const Capabilities = () => {
   return (
-    <section id="capabilities" className="w-full h-[800px] py-11 border-b-[1px] border-b-slate-800">
+    <section id="capabilities" className="w-full py-11 pb-10 border-b-[1px] border-b-slate-800">
       <Title title="Capabilities" des="Skills That Define Me" />
-      <div className="grid grid-cols-2 gap-20">
+      <div className="grid grid-cols-3 gap-6">
           <CardBox 
           title="Website Development"
-          des="Expertise in building responsive websites using HTML, CSS,Tailwindcss, Bootstrap, JavaScript, and React.js.Experience with state management using React hooks, along with UI/UX (Figma) optimization for better user experience.Developed interactive features and dynamic layouts for web applications."
-          icon = {<SiWeightsandbiases/>}
+          des="Skilled in building responsive websites with HTML, CSS, TailwindCSS, Bootstrap, JavaScript, and React.js. Proficient in React hooks, UI/UX (Figma), and creating dynamic, interactive web application layouts."
+          icon = {<CgWebsite />}
           />
           <CardBox           
           title="Research Work"
-          des='I focus on machine learning-based thesis using both primary and secondary tabular datasets. My work involves data preprocessing, feature engineering, and implementing machine learning models using Google Colab and Jupyter Notebooks. Recently, my paper titled "An Empirical Machine Learning Approach Towards Effective Sleep Disorder Prediction" was accepted for presentation at the 2025 4th International Conference on Electrical, Computer and Communication Engineering (ECCE 2025)."'
-          icon = {<SiRoamresearch/>}
+          des='I specialize in machine learning-based theses using primary and secondary tabular datasets, focusing on data preprocessing, feature engineering, and model implementation in Google Colab and Jupyter Notebooks. My paper was accepted at ECCE 2025.'
+          icon = {<GiArchiveResearch/>}
           />
           <CardBox           
           title="Machine Learning Projects"
-          des='I have recently worked on a machine learning-based project called the "Smart Attendance System". In my projects, I utilize a variety of ML algorithms, tools, and libraries to solve real-world problems. For development, I primarily use VSCode as my integrated development environment (IDE).'
-          icon = {<SiCodeproject/>}
+          des='I recently developed a "Smart Attendance System" using various ML algorithms, tools, and libraries to address real-world problems. For development, I primarily use VSCode as my integrated development environment (IDE).'
+          icon = {<GoProjectSymlink/>}
           />
           <CardBox           
           title="Python/Django Projects"
-          des='Built Python applications and Django-based websites with dynamic content management, authentication, and form handling.Designed and developed REST APIs using Django REST Framework (DRF).Experience with database management using SQLite and MySQL and efficient backend integration.'
-          icon = {<SiCodeproject/>}
+          des='I recently worked on a machine learning project, applying various ML algorithms, tools, and libraries to address real-world problems. For development, I primarily use VSCode as my integrated development environment (IDE).'
+          icon = {<GrProjects/>}
            />
       </div>
     </section>
